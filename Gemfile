@@ -27,10 +27,10 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # 
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+#gem 'capistrano-rails', group: :development
 
 gem "pg", '~> 0.17.1', :group => :production
-group :development, :test do
+group :development, :deployment, :test do
     gem 'pg', "~> 0.17.1", :platform => [:mswin, :mingw]
 end
 
@@ -40,7 +40,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
-group :production do
+group :production, :deployment do
   gem 'rails_12factor'
   gem 'unicorn'
 end
