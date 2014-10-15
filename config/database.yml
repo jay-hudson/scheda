@@ -1,7 +1,7 @@
 development:
   adapter: postgresql
   encoding: unicode
-  database: blog_development
+  database: scheda_development
   pool: 5
 
 test:
