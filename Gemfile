@@ -29,7 +29,9 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
-gem 'pg'
+gem "pg", '~> 0.17.1', :group => :production
+group :development, :test do
+    gem 'pg', "~> 0.17.1", :platform => [:mswin, :mingw]
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
