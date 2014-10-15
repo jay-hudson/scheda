@@ -32,6 +32,7 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 gem "pg", '~> 0.17.1', :group => :production
 group :development, :test do
     gem 'pg', "~> 0.17.1", :platform => [:mswin, :mingw]
+end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -42,5 +43,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 group :production do
   gem 'rails_12factor'
   gem 'unicorn'
-  #sdjklfjlksd
 end
