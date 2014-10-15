@@ -1,6 +1,5 @@
 source 'https://rubygems.org'
 
-gem 'pg'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
 # Use SCSS for stylesheets
@@ -25,10 +24,12 @@ gem 'sdoc', '~> 0.4.0',          group: :doc
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use unicorn as the app server
-# gem 'unicorn'
+# 
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+
+gem 'pg'
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
@@ -38,4 +39,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 
 group :production do
   gem 'rails_12factor'
+  gem 'unicorn'
+  #sdjklfjlksd
 end
