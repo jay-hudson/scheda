@@ -16,5 +16,7 @@ module Scheda
     config.assets.enabled = true
     config.assets.version = '2.0'
 	config.action_controller.perform_caching = false
+	
+	 config.assets.paths << Rails.root.join('vendor', 'assets', 'bower_components')
   end
 end

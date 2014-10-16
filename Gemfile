@@ -41,3 +41,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin]
 gem 'bower-rails'
 
 gem 'bootstrap-sass'
+
+gem 'haml', '~> 4.0.5'

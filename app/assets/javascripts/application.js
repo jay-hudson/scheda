@@ -12,5 +12,8 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require turbolinks
+//= require bootstrap-sass-official
+//= require angular
+//= require angular-animate
+//= require angular-ui-router
 //= require_tree .
