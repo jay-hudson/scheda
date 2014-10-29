@@ -1,0 +1,16 @@
+%nav(ng-include="'mainNav.html'")
+%div(class="container-fluid")
+  %div(class="row")
+    %div(class="col-md-2")
+      %ul(class="list-unstyled")
+        %li
+          %a(ui-sref="state1")
+            State 1
+        %li
+          %a(ui-sref="state2")
+            State 2
+      %a(href="#" class="btn btn-success btn-xs btn-block")
+        %span(class="glyphicon glyphicon-plus")
+        Create New Building
+    %div(class="col-md-10")
+      %div(ui-view)
