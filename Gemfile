@@ -33,7 +33,7 @@ gem 'autoprefixer-rails'
 
 
 ##Testing
-gem "jasmine", github: "pivotal/jasmine-gem"
+gem "jasmine", github: "pivotal/jasmine-gem", group: :test
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -45,5 +45,9 @@ gem 'unicorn'
 # gem 'capistrano-rails', group: :development
 
 # Use debugger
-# gem 'debugger', group: [:development, :test]
+# gem 'debugger', group: [:development, :test
+
+gem 'rails_12factor', group: :production
+
+ruby '2.1.1'
 

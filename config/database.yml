@@ -1,25 +1,21 @@
+postgresql: &postgresql
+  adapter: postgresql
+  username: postgres
+  password:
+  database: scheda_<%= Rails.env %>
+  min_messages: ERROR
+ 
+defaults: &defaults
+  pool: 5
+  timeout: 5000
+  host: localhost
+  <<: *<%= ENV['DB'] || "postgresql" %>
+ 
 development:
-  adapter: postgresql
-  encoding: unicode
-  database: scheda-development
-  pool: 5
-  host: localhost
-  username: action
-  password:
-
+  <<: *defaults
+ 
 test:
-  adapter: postgresql
-  database: scheda-test
-  pool: 5
-  host: localhost
-  username: action
-  password:
-
+  <<: *defaults
+ 
 production:
-  adapter: postgresql
-  encoding: unicode
-  database: scheda-production
-  pool: 5
-  host: localhost
-  username: action
-  password:
+  <<: *defaults

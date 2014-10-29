@@ -3,14 +3,7 @@ rvm:
   2.1.1
 env:
   DB=postgresql
+script:
+  RAILS_ENV=test bundle exec rake --trace db:migrate test
 before_script:
-  psql -c 'create database myapp_test' -U postgres
-deploy:
-  provider: heroku
-  api_key:
-    secure: VG+nvxu0oW0g8ZZDWdfN3XiR0jPEASjTrFrn5GzgdVTP78hmB4Y0z79OPdHYuqY1fviLYUAWiuVeZ5nZxrLn/mXJn+nrjQ9lUiQ/cnvuQpGlSSdHB6uZTD+rRgrTvLioLwGc3HjaxxAkhAm3h/0ORnb9vPuH1keRuPMWcj4CZv4=
-  app: scheda
-  on:
-
-
-    repo: jay-hudson/scheda
+  psql -c 'create database scheda_test' -U postgres
