@@ -1,3 +1,4 @@
+require 'uglifier'
 Rails.application.configure do
   # Settings specified here will take precedence over those in config/application.rb.
 
@@ -23,7 +24,7 @@ Rails.application.configure do
   config.serve_static_assets = true
 
   # Compress JavaScripts and CSS.
-  config.assets.js_compressor = :uglifier
+  config.assets.js_compressor = Uglifier.new(:mangle => false)
   # config.assets.css_compressor = :sass
 
   # Do not fallback to assets pipeline if a precompiled asset is missed.
