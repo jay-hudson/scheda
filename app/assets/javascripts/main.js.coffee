@@ -1,4 +1,4 @@
-myApp = angular.module 'myApp', ['ui.router','templates']
+myApp = angular.module 'myApp', ['ui.router']
 
 myApp.config ($stateProvider, $urlRouterProvider) ->
 	$urlRouterProvider.otherwise '/'
@@ -8,11 +8,11 @@ myApp.config ($stateProvider, $urlRouterProvider) ->
 		templateUrl: 'home.html'
   $stateProvider.state 'state1',
 		url: '/state1',
-		templateUrl: 'state1.html'
+		template: templates.state1
   $stateProvider.state 'state2',
     url: '/state2'
-    templateUrl: 'state2.html'
+    template: templates.state2 
   $stateProvider.state 'main_nav',
     url: ''
-    templateUrl: 'mainNav.html'
+    template: templates.mainNav
 	return

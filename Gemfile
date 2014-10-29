@@ -30,6 +30,8 @@ gem 'angular-rails-templates'
 gem 'haml'
 gem 'autoprefixer-rails'
 
+gem 'jsstrings-templates', :git => "https://github.com/jay-hudson/jsstring-templates.git"
+
 
 ##Testing
 gem "jasmine", github: "pivotal/jasmine-gem", group: :test
