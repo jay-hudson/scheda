@@ -35,8 +35,8 @@ Rails.application.configure do
   # Version of your assets, change this if you want to expire all your assets.
   config.assets.version = '1.0'
   
-  config.assets.compress = true
-  config.assets.js_compressor = Uglifier.new(:mangle => false).compile(source)
+  #config.assets.compress = true
+  #config.assets.js_compressor = Uglifier.new(:mangle => false).compile(source)
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
