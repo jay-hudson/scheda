@@ -36,7 +36,7 @@ Rails.application.configure do
   config.assets.version = '1.0'
   
   config.assets.compress = true
-  config.assets.js_compressor = Uglifier.new(:mangle => true)
+  config.assets.js_compressor = Uglifier.new(:mangle => false)
 
   # Specifies the header that your server uses for sending files.
   # config.action_dispatch.x_sendfile_header = "X-Sendfile" # for apache
